@@ -170,7 +170,8 @@ if ($buildVersion -eq "v1.11.0") {
     Copy-Item ..\patches\eigen_half.patch third_party\
 } elseif ($buildVersion -eq "v1.13.1") {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    (Invoke-WebRequest https://github.com/tensorflow/tensorflow/commit/ec727016282383aacf9d26386b01f6bdbd65b14b.patch).Content | git apply -v --ignore-space-change --ignore-white
+    (Invoke-WebRequest https://github.com/tensorflow/tensorflow/commit/ec727016282383aacf9d26386b01f6bdbd65b14b.patch).Content | git apply -v --ignore-space-change --ignore-white 
+    (Invoke-WebRequest https://github.com/tensorflow/tensorflow/commit/7e090f6a5412fd5f22b5b75ca7ae7844c3d025e9.patch).Content | git apply -v --ignore-space-change --ignore-white #unicode patch from master so no --index 
 }
 
 if ($BuildCppAPI) {
@@ -182,10 +183,7 @@ if ($BuildCppAPI) {
         # C++ Symbol Patch for v1.12.0
         git apply --ignore-space-change --ignore-white "..\patches\cpp_symbol.1.12.0.patch"
         Copy-Item ..\patches\tf_exported_symbols_msvc.lds tensorflow\
-    } elseif ($buildVersion -eq "v1.13.1") {
-        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-        (Invoke-WebRequest https://github.com/tensorflow/tensorflow/commit/ec727016282383aacf9d26386b01f6bdbd65b14b.patch).Content | git apply -v --ignore-space-change --ignore-white
-    }
+    } 
 }
 
 Set-Location ..
