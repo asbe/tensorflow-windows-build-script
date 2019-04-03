@@ -1,0 +1,35 @@
+diff --git a/tensorflow/core/kernels/BUILD b/tensorflow/core/kernels/BUILD
+index e2234c1f9d..fa420fb42c 100644
+--- a/tensorflow/core/kernels/BUILD
++++ b/tensorflow/core/kernels/BUILD
+@@ -4672,8 +4672,8 @@ cc_library(
+         ":string_strip_op",
+         ":string_to_hash_bucket_op",
+         ":substr_op",
+-        ":unicode_ops",
+-        ":unicode_script_op",
++ #       ":unicode_ops",
++ #       ":unicode_script_op",
+     ],
+ )
+ 
+@@ -4685,7 +4685,7 @@ cc_library(
+         "//tensorflow/core:framework",
+         "//tensorflow/core:lib",
+         "//tensorflow/core:protos_all_cc",
+-        "@icu//:common",
++#        "@icu//:common",
+     ],
+ )
+ 
+diff --git a/third_party/icu/BUILD.bazel b/third_party/icu/BUILD.bazel
+index 36d6b9006b..0fbe8af7a0 100644
+--- a/third_party/icu/BUILD.bazel
++++ b/third_party/icu/BUILD.bazel
+@@ -1,5 +1,5 @@
+ package(
+-    default_visibility = ["//visibility:public"],
++    default_visibility = ["//visibility:private"],
+ )
+ 
+ licenses(["notice"])  # Apache 2.0

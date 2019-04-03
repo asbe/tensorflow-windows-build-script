@@ -40,3 +40,32 @@ EXPORTS
     ?CopyFromInternal@Tensor@tensorflow@@AEAAXAEBV12@AEBVTensorShape@2@@Z
     ??1NodeDef@tensorflow@@UEAA@XZ
     ??0NodeDef@tensorflow@@QEAA@AEBV01@@Z
+
+    ??0?$TensorShapeBase@VPartialTensorShape@tensorflow@@@tensorflow@@QEAA@XZ	
+    
+    ??_7GraphDef@tensorflow@@6B@
+    ??0MatMul@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@1AEBUAttrs@012@@Z
+    ?Const@ops@tensorflow@@YA?AVOutput@2@AEBVScope@2@AEBUInitializer@Input@2@@Z
+    ??0Placeholder@ops@tensorflow@@QEAA@AEBVScope@2@W4DataType@2@AEBUAttrs@012@@Z
+    ??0?$TensorShapeBase@VPartialTensorShape@tensorflow@@@tensorflow@@QEAA@V?$Span@$$CB_J@absl@@@Z
+    ?InternalSwap@GraphDef@tensorflow@@AEAAXPEAV12@@Z
+    ?CopyFrom@GraphDef@tensorflow@@QEAAXAEBV12@@Z
+    ?WithOpNameImpl@Scope@tensorflow@@AEBA?AV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+    ?ToGraphDef@Scope@tensorflow@@QEBA?AVStatus@2@PEAVGraphDef@2@@Z
+    ?NewRootScope@Scope@tensorflow@@SA?AV12@XZ
+    ??1Scope@tensorflow@@QEAA@XZ
+    ??0Initializer@Input@tensorflow@@QEAA@AEBV?$initializer_list@UInitializer@Input@tensorflow@@@std@@@Z
+    ?NewSession@tensorflow@@YAPEAVSession@1@AEBUSessionOptions@1@@Z
+
+    ?ComputeFlatOuterDims@Tensor@tensorflow@@CA?AV?$InlinedVector@_J$03V?$allocator@_J@std@@@absl@@V?$Span@$$CB_J@4@_J@Z
+    ?JoinPathImpl@internal@io@tensorflow@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$initializer_list@Vstring_view@absl@@@5@@Z
+    ??6tensorflow@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVStatus@0@@Z
+    ??1LogMessage@internal@tensorflow@@UEAA@XZ
+    ??0LogMessage@internal@tensorflow@@QEAA@PEBDHH@Z
+    ?dim_sizes@?$TensorShapeBase@VTensorShape@tensorflow@@@tensorflow@@QEBA?AV?$InlinedVector@_J$03V?$allocator@_J@std@@@absl@@XZ
+    ?AddDim@?$TensorShapeBase@VTensorShape@tensorflow@@@tensorflow@@QEAAX_J@Z
+    ??0Placeholder@ops@tensorflow@@QEAA@AEBVScope@2@W4DataType@2@@Z
+    ??0Cast@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@W4DataType@2@@Z
+    ??0Operation@tensorflow@@QEAA@PEAVNode@1@@Z
+    ?StrCat@strings@tensorflow@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVAlphaNum@12@00@Z
+    ??0Status@tensorflow@@QEAA@W4Code@error@1@Vstring_view@absl@@@Z
