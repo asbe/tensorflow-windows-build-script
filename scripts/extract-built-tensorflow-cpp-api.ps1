@@ -29,7 +29,7 @@ Copy-Item $tensorFlowSourceDir\bazel-genfiles\tensorflow\cc $tensorFlowBinDir\te
 
 # Absl includes.
 Copy-Item $tensorFlowSourceDir\bazel-source\external\com_google_absl\absl $tensorFlowBinDir\absl\include\absl\ -Recurse -Container -Filter "*.h" 
-Copy-Item $tensorFlowSourceDir\bazel-source\external\com_google_absl\absl\numeric $tensorFlowBinDir\absl\include\absl\numeric -Recurse -Container -Filter "*.inc" 
+Copy-Item $tensorFlowSourceDir\bazel-source\external\com_google_absl\absl\numeric\*.inc $tensorFlowBinDir\absl\include\absl\numeric
 
 # Eigen includes
 Copy-Item $tensorFlowSourceDir\bazel-source\external\eigen_archive\ $tensorFlowBinDir\Eigen\eigen_archive -Recurse

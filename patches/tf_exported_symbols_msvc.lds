@@ -69,3 +69,5 @@ EXPORTS
     ??0Operation@tensorflow@@QEAA@PEAVNode@1@@Z
     ?StrCat@strings@tensorflow@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVAlphaNum@12@00@Z
     ??0Status@tensorflow@@QEAA@W4Code@error@1@Vstring_view@absl@@@Z
+
+    ?DebugString@TensorShapeRep@tensorflow@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ	
